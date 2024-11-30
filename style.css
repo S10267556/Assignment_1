@@ -84,7 +84,7 @@ nav li:first-child{
   display: none;
 } /*hides hamburger menu on desktop*/
 
-.motto{
+#motto{
   position: absolute;
   left: 22%;
   margin-top: 255px;
@@ -98,7 +98,7 @@ nav li:first-child{
   color: rgb(255, 247, 240);
 }
 
-.donate-button{
+#donate-button{
   position: absolute;
   left: 55%;
   margin-top: 395px;
@@ -115,31 +115,155 @@ nav li:first-child{
   border-radius: 25px;
 }
 
-.donate-button:hover{
+#donate-button:hover{
   background-color: rgba(78, 150, 47, 0.8);
   color: rgb(47, 26, 0);
 }
 
 .progress {
   position: relative; /* Keeps it in document flow */
-  height: 900px; 
+  height: 1000px; 
   width: 100%;
-  background-image: url(images/progressbg.jpg); /* Background for the progress section */
-  opacity: 0.2;
-  box-shadow: -10px 0 10px rgba(0,0, 0, 0.1);
+  background-color: rgb(235, 227, 211);
+  box-shadow: -10px 0 10px rgba(0,0, 0, 0.5);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  padding: 20px;
-  overflow-y: auto; /* Makes the section content scrollable */
   z-index: 10; /* Ensure it's above other content */
 }
 
-.tree-planting-img{
-  opacity: 1;
+#our-progress{
+  position: relative;
+  font-size: 50px;
+  margin-top: -380px;
+  margin-left: 580px;
+  display: flex;
+}
+
+#tree-planting-img{
   height: 200px;
   width: 200px;
+  margin-top: 250px;
+  margin-left: 200px;
+  position: relative;
+  z-index: 2;
 }
+
+#globe-img{
+  height: 200px;
+  width: 200px;
+  margin-top: 200px;
+  margin-left: 260px;
+  position: relative;
+  z-index: 2;
+}
+
+#volunteer-img{
+  height: 200px;
+  width: 200px;
+  margin-top: 250px;
+  margin-left: 260px;
+  position: relative;
+  z-index: 2;
+}
+
+#trees-planted{
+  position: absolute;
+  margin-left: 120px;
+  margin-top: 80px;
+  font-size: 30px;
+  background-color: rgb(189, 174, 150);
+  padding: 18px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 450px;
+  z-index: 1;
+  display: flex;
+}
+
+#continents{
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 80px;
+  font-size: 30px;
+  background-color: rgb(189, 174, 150);
+  padding: 18px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 450px;
+  z-index: 1;
+  display: flex;
+}
+
+#volunteers{
+  position: absolute;
+  margin-left: 1060px;
+  margin-top: 80px;
+  font-size: 30px;
+  background-color: rgb(189, 174, 150);
+  padding: 18px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 450px;
+  z-index: 1;
+  display: flex;
+}
+
+#project-button{
+  position: absolute;
+  left: 43%;
+  margin-top: 705px;
+  margin-left: -60px;
+  height: auto;
+  background-color: rgb(111, 99, 80);
+  padding: 18px;
+  font-size: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: inline-block;
+  color: rgb(255, 247, 240);
+  border-radius: 25px; /*round corners*/
+  display: flex;
+}
+
+#tree-counter{
+  font-size: 50px;
+  font-weight: bold;
+  color: #41ab46;
+  margin-left: 230px;
+  margin-top: 420px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+}
+
+#project-button:hover{
+  background-color: rgb(73, 107, 58);
+  color: rgb(151, 173, 108);
+}
+
+#continent-num{
+  font-size: 50px;
+  font-weight: bold;
+  color: #41ab46;
+  margin-left: 750px;
+  margin-top: -65px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+}
+
+#volunteer-num{
+  font-size: 50px;
+  font-weight: bold;
+  color: #41ab46;
+  margin-left: 1160px;
+  margin-top: -55px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+}
+
+
 
 @media(max-width: 825px){
   .hideOnMobile{
@@ -168,3 +292,26 @@ nav li:first-child{
     margin-top: 550px;
   }
 }
+
+@media(max-width: 1433px){
+  #our-progress{
+    position: relative;
+    font-size: 50px;
+    margin-top: -360px;
+    margin-left: 490px;
+    display: flex;
+  }
+  #volunteers{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 200px;
+    font-size: 30px;
+    background-color: rgb(189, 174, 150);
+    padding: 18px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 450px;
+    z-index: 1;
+    display: flex;
+  }
+}  

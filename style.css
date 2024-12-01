@@ -11,7 +11,7 @@ body{
 }
 
 header{
-  min-height: 100vh;
+  min-height: 100vh; /*viewport height, the screens height*/
   background-image: url("images/treeSunset.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -424,6 +424,75 @@ footer{
 #back-text{
   font-weight: 400;
 }
+
+/*donate page*/
+
+#header-donate{
+  min-height: 100vh;
+  background-image: url("images/sunlight-canopy.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+}
+
+.donate-container{
+  position: absolute;
+  top: 50%;     /* 50% from the top of the viewport */
+  left: 50%;    /* 50% from the left of the viewport */
+  transform: translate(-50%, -50%); /* Offsets the element back by 50% of its own height and width */
+  background-color: rgba(30, 54, 7, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0,0, 0, 0.1);
+  padding: 70px;
+  display: inline-block;
+  color: rgb(255, 247, 240);
+  flex-direction: column; /* Stack items vertically for very small screens */
+  align-items: center; 
+}
+
+#thanks{
+  margin-bottom: 70px;
+  font-size: 35px;
+  color: rgb(216, 224, 176);
+}
+
+#ty{
+  color: rgb(255, 159, 25);
+}
+
+#amt-txt, #email-txt, #phone-txt{
+  color: #f3ffe2;
+  font-size: 25px;
+}
+
+#amount, #number-d, #d-email{
+  background-color: rgb(211, 227, 163);
+  height: 25px;
+  width: 30%;
+}
+
+#amount{
+  margin-bottom: 20px;
+}
+
+#number-d{
+  margin-bottom: 20px;
+}
+
+#d-email{
+  margin-bottom: 20px;
+}
+
+#submit-button-d{
+  padding: 5px;
+  background-color: rgb(136, 165, 117);
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
 
 @media(max-width: 825px){
   .hideOnMobile{

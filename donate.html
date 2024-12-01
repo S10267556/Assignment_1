@@ -8,11 +8,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <title>One Lone Tree</title>
+        <title>Anything helps</title>
     </head>
     
     <body>
-        <header>
+        <header id="header-donate">
             <nav>
                 <ul class="sidebar"> <!--Nav bar for mobile-->
                     <li onclick=hideSidebar()><a href="#"><img src="images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" height="32" width="32" ></a></li>
@@ -30,40 +30,22 @@
                     <li class="menu-button" onclick=showSidebar()><a href="#"><img src="images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" height="32" width="32" ></a></li> <!--inserts image of hamburger menu, resizing it-->
                 </ul>
             </nav>
-            <div id="intro">
-                <h1 id="motto">Changing lives, One tree at a time.</h1>
-                <h2 id="donate-button"><a href="donate.html">Donate Today!</a></h2>
+        
+            <div class="donate-container">
+                <div class="donate-items"></div>
+                    <h3 id="thanks"><em id="ty">Thank you</em> for donating!</h3>
+                    <form action="/" method="GET">
+                        <label for="amount" id="amt-txt">Amount:</label>
+                        <input type="number" placeholder="Any amount helps!" name="amount" id="amount" required> <br>
+                        <label for="d-email" id="email-txt">Email:</label>
+                        <input type="text" placeholder="Email" name="d-email" id="d-email" required> <br>
+                        <label for="phone" id="phone-txt">Phone Number (optional):</label>
+                        <input type="tel" placeholder="Phone Number" name="number" id="number-d"> <br>
+                        <input type="image" src="images/sendButton.png" alt="Submit" width="45" height="45" id="submit-button-d"><br>
+                    </form>
+
             </div>
         </header>
-
-        
-
-        <div class="progress">
-            <h2 id="our-progress"><u>Our Progress</u></h2>
-            <div id="progress-tree">
-                <img src="images/treePlant.png" alt="An image of a hand holding a growing sapling" title="An image of a hand holding a growing sapling" id="tree-planting-img">
-                <p id="trees-planted">Trees Planted</p>
-                <div id="tree-counter">15000</div>
-            </div>
-            <div id="progress-globe">
-                <img src="images/globe.png" alt="An image of a globe" title="An image of a globe" id="globe-img">
-                <p id="continents">Continents</p>
-                <div id="continent-num">3</div>
-            </div>
-            <div id="progress-volunteer">
-                <img src="images/handtgt.png" alt="An image of three hands joined together" title="An image of three hands joined together" id="volunteer-img">
-                <p id="volunteers">Volunteers</p>
-                <div id="volunteer-num">3582</div>
-            </div>
-            <div class="button-container">
-                <p id="project-button">Check Out Projects</p>
-            </div>
-        </div>
-
-        <div id="lead-to-about-us">
-            <p id="ab-us"><em id="five-m">5 million trees</em> are planted per day. We want to be part of that.</p>
-            <p id="ab-us-button"><a href="about-us.html">About Us</a></p>
-        </div>
 
         <footer>
             <p id="follow-us">Follow our cause!</p> <br>

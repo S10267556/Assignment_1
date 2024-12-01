@@ -326,6 +326,8 @@ footer{
 
 #email{
   background-color: rgb(105, 121, 94);
+  height: auto;
+  width: 30%;
 }
 
 #contact-us{
@@ -358,6 +360,70 @@ footer{
   color: rgb(196, 212, 185);
 }
 
+/*About us page*/
+
+#header-about{
+  min-height: 100vh;
+  background-image: url("images/people-planting.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+}
+
+#about-us{
+  position: absolute;
+  top: 50%;     /* 50% from the top of the viewport */
+  left: 50%;    /* 50% from the left of the viewport */
+  transform: translate(-50%, -50%); /* Offsets the element back by 50% of its own height and width */
+  background-color: rgba(76, 115, 39, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0,0, 0, 0.1);
+  padding: 70px;
+  display: inline-block;
+  color: rgb(255, 247, 240);
+  flex-direction: column; /* Stack items vertically for very small screens */
+  align-items: center; 
+}
+
+
+
+#backstory{
+  display: flex;
+  width: 100%;
+  background-color: #e4d7bd;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.split{
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 30%; 
+  display: flex;
+  flex-direction: column;
+}
+
+#sapling-in-sunset{
+  height: auto;
+  width: 100%;
+}
+
+
+.title-header{
+  text-align: center;
+  margin-top: 35px;
+  font-size: 25px;
+  color: rgb(50, 57, 23);
+}
+
+#back-text{
+  font-weight: 400;
+}
 
 @media(max-width: 825px){
   .hideOnMobile{

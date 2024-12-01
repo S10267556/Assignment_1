@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>What about it?</title>
+    </head>
+    
+    <body>
+        <header id="header-about">
+            <nav>
+                <ul class="sidebar"> <!--Nav bar for mobile-->
+                    <li onclick=hideSidebar()><a href="#"><img src="images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" height="32" width="32" ></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Donate Today!</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="hideOnMobile"><a href="#">About Us</a></li>
+                    <li class="hideOnMobile"><a href="#">Projects</a></li>
+                    <li class="hideOnMobile"><a href="#">FAQs</a></li>
+                    <li class="hideOnMobile"><a href="#">Donate Today!</a></li> <!--list to direct to diff pgs, placed in nav bar-->
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><img src="images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" height="32" width="32" ></a></li> <!--inserts image of hamburger menu, resizing it-->
+                </ul>
+            </nav>
+            <div id="about-pg">
+                <h1 id="about-us">About Us</h1>
+            </div>
+        </header>
+
+        <article id="backstory">
+            <h3 class="title-header"> How we started</h3><br>
+            <div class="split">
+                <img src="images/sapling-sunset.jpg" id="sapling-in-sunset">
+            </div>
+            <div class="split">  
+                <p id="back-text">This organisation was founded by a pair of siblings, johgn and jane. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </article>
+
+        <footer>
+            <p id="follow-us">Follow our cause!</p> <br>
+            <div class="social-media">
+                <div class="icon">
+                    <a href="https://www.facebook.com/"><img src="images/facebookbw.png" alt="facebook logo" title="facebook logo" id="facebook-logo"></a>
+                </div>                    
+                <div class="icon">
+                    <a href="https://www.instagram.com/"><img src="images/instabw.png" alt="instagram logo" title="instagram logo" id="instagram-logo"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/"><img src="images/linkedinbw.png" alt="linkedin logo" title="linkedin logo" id="linkedin-logo"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://x.com/?lang=en-sg"><img src="images/xbw.png" alt="x logo" title="x logo" id="x-logo"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.youtube.com/"><img src="images/youtubebw.png" alt="youtube logo" title="youtube logo" id="youtube-logo"></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.pinterest.com/"><img src="images/pinterestbw.png" alt="pinterest logo" title="pinterest logo" id="pinterest-logo"></a>
+                </div>         
+            </div>
+
+            <div id="email-newsletter">
+                <label id="newsletter"><br>Join our Newsletter! (Email):</label>
+                <form action="/" method="GET">
+                    <input type="text" placeholder="Email" name="email" id="email" required>
+                    <input type="image" src="images/sendButton.png" alt="Submit" width="35" height="35" id="submit-button"><br>
+                </form>
+            </div>
+
+            <div id="contact-us">
+                <p id="contact"><br>Contact us</p>
+                <p id="number">866-740-4531</p>
+                <p id="email-address">onelonetree@gmail.com</p>
+                <p id="address">47050 Generals Highway <br>
+                                Three Rivers, CA 93271</p><br>
+            </div>
+
+        </footer>
+    
+        <script src="script.js"></script>
+    </body>
+</html>

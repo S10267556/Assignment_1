@@ -23,6 +23,8 @@ User stories:
 
 -As someone who is confused about this organisation, i want to contact the people behind this, so that i can clarify any questions that i may have.
 
+-As someone who is interested in finding out more about what they have done and follow their future projects, i want to have places where i can just follow them to check up on them whenever i want.
+
 
 
 
@@ -54,6 +56,10 @@ iii. Go to the other pages through the donations page using the nav bar
 iv. resize screen and repeat i-iii
 v. scroll down on each of the pages and check the other buttons which lead to the other pages
 vi. Go to the footer of each oage, and check that all social media link is working correctly
+
+3) Responsive design:
+i: Go to each page, and resize the screen
+ii:make them as small as you can to see how far you can go
 
 The projects looks normal on microsoft edge, and is responsive when resized. However, when resized too small, some parts of the website in the home page do not size down enough, causing them to protrude. 
 
